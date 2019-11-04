@@ -1,0 +1,131 @@
+body{
+	background-color: #8FA5D4;
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+.popup_bg{
+	background-color: rgba(100, 100, 100, 0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+.popup_bg._mod-active{
+	display: block;
+}
+.popup_fundamental{
+	background-color: #FFFFFF;
+	display: none;
+	left: 50%;
+	max-width: 300px;
+	position: fixed;
+	top: 50%;
+	z-index: 25;
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.popup_fundamental._mod-active{
+	display: block;
+}
+.popup_fundamental .popup_close{
+	cursor: pointer;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.content_fundamental{
+	background-color: #FFFFFF;
+	margin: 30px auto;
+	max-width: 900px;
+}
+.content_block{
+	padding: 20px;
+}
+.content_block .tarif_block{
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	margin: 20px 2%;
+	padding: 20px 0;
+	width: 29%;
+}
+.content_block .tarif_block:hover{
+	background-color: rgba(200, 200, 200, 0.2);
+}
+.content_block.tarif_content{
+	padding-top: 0;
+}
+
+.block_logo_wrapper{
+	margin-bottom: 30px;
+}
+.block_logo_wrapper .block_logo{
+	width: 70px;
+}
+.block_header_wrapper{
+	margin-bottom: 20px;
+}
+.block_header_wrapper .block_header{
+	color: #7F9FDE;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.block_text_wrapper{
+	margin-bottom: 20px;
+}
+.block_text{
+	color: gray;
+	font-size: 14px;
+	opacity: 0.6;
+}
+.block_cost_wrapper .block_cost{
+	color: #7F9FDE;
+}
+.block_cost_wrapper .block_cost .cost_sign{
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: -3px;
+}
+.block_cost_wrapper .block_cost .cost_num{
+	font-size: 26px;
+	font-weight: bold;
+}
+.block_cost_wrapper .block_cost .cost_period{
+	margin-left: -3px;
+}
+.popup_header{
+	font-weight: bold;
+}
+.action_btn{
+	background-color: #2C59FF;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+.clr{
+	clear: both;
+}
+._mod-center{
+	text-align: center;
+}
+
+@media (max-width: 599px){
+	.content_fundamental{
+		max-width: 80%;
+	}
+	.content_block .tarif_block{
+		float: none;
+		width: 80%;
+	}
+}
